@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+    int  c = 21683 ;
+    char n[12] = "Diana Abrego";
+    printf ("Mi nombre es %s y mi carnet es %d\n", n, c);
+    return 0;
+}
