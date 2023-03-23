@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, S=1, A=0, M, i;
+    printf("Ingrese la cantidad de numeros de la serie de Fibonacci: ");
+    scanf("%d", &N);
+    for(i=1; i<=N; i++)
+    {
+        printf("%d, ", A);
+        M = A+S;
+        A = S;
+        S = M;
+        
+    }
+    return 0;
+}
