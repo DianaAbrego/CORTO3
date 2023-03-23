@@ -1,0 +1,46 @@
+
+#include <stdio.h>
+#include "operaciones.h"
+#define PI 3.14159
+int main()
+{
+    int a,b; 
+    printf("Ingrese dos numeros enteros, con separacion de un espacio: ");
+    scanf("%d %d", &a, &b);
+    int suma = add(a,b);
+    int rest =  res(a,b);
+    float divis = divi(a,b);
+    int multip = multi(a,b);
+    printf("La suma de  %d y %d es %d\n ", a, b, suma);
+    printf ("La resta de %d y %d es %d\n", a, b, rest);
+    printf ("La division de %d y %d es %.2f\n", a, b, divis);
+    printf ("La multipilicacion de %d y %d es %d\n", a, b, multip);
+    printf ("Este es el numero de PI %.5f\n", PI);
+    return 0;
+}
+/////////////////////////
+#ifndef operaciones_H
+#define operaciones_H
+int add(int a, int b);
+int res(int a, int b);
+float divi(float a, float b);
+int multi(int a, int b);
+#endif /*operaciones_H*/
+;/////////////////////////////////
+#include "operaciones.h"
+int add(int a, int b)
+{
+   return a + b;
+}
+int res(int a, int b)
+{
+    return a - b;
+}
+float divi(float a, float b)
+{
+    return a/b;
+}
+int multi(int a, int b)
+{
+    return a * b;
+}
