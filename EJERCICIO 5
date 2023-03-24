@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    
+    int i ,N = 6;
+    int arrey[N];
+    printf("Ingrese %d enteros espaciados: ", N);
+    for (i = 0; i < N; i++) {
+        scanf("%d", & arrey[i]);
+    }
+    int *ptr = &arrey[0]; //puntero
+ 
+    printf("El array multiplicado por 2:\n");
+    for (int i = 0; i < N; i++) {
+        printf("%d ", (*ptr) * 2);
+        ptr++;
+    }
+    
+    return 0;
+}
